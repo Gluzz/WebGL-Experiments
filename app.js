@@ -1,13 +1,7 @@
 console.log('console test'); //console print test
 
 var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera( 75, 5 / 5, 1, 1000 );
-			scene.add( camera );
-			
-			camera.position.x = 0;
-			camera.position.y = 0;
-			camera.position.z = 90;
-			camera.rotation.z = 90;
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 			var renderer = new THREE.WebGLRenderer();
 			renderer.setSize( window.innerWidth, window.innerHeight );
