@@ -3,13 +3,14 @@ console.log('console test'); //console print test
 var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-	camera.position.x = 5;
+	camera.position.y = 5;
+	camera.position.z = 5;
 
 	var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
 
-	var cube = new THREE.BoxGeometry( 1, 1, 1 );
+	var cube = new THREE.BoxGeometry( 10, 10, 10 );
 	var material = new THREE.MeshBasicMaterial( { 
 	color: 0xffffff,
 	wireframe: true,
