@@ -21,7 +21,7 @@ var gridHelper = new THREE.GridHelper( 100, 25, 0x00a2b1, 0x00a2b1 );
 scene.add( cube );
 			
 	var cube = new THREE.Mesh( cube, material );
-	var GridHelper = new THREE.Mesh( gridHelper, material1 );
+	var GridHelper = new THREE.Mesh( gridHelper, material );
 scene.add( gridHelper );
 			
 var loader = new THREE.JSONLoader();
