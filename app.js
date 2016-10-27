@@ -36,7 +36,7 @@ var render = function () {
 	requestAnimationFrame( render );
 
 	cube.rotation.x += 0.01;
-	cube.rotation.y += 0.01;
+	cube.rotation.y += 0.0;
 	gridHelper.rotation.x += 0.0;
 	gridHelper.rotation.y += 0.0;
 
