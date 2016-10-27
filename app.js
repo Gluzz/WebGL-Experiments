@@ -14,7 +14,7 @@ var scene = new THREE.Scene();
 	var cube = new THREE.BoxGeometry( 10, 10, 10 );
 	var material = new THREE.MeshBasicMaterial( { 
 	color: 0xdc0070,
-	wireframe: false,
+	wireframe: true,
 } );
 
 var material1 = new THREE.MeshBasicMaterial( { 
@@ -23,7 +23,7 @@ var material1 = new THREE.MeshBasicMaterial( {
 } );
 
 			
-var gridHelper = new THREE.GridHelper( 50, 10 );
+var gridHelper = new THREE.GridHelper( 100, 25 );
 scene.add( gridHelper );
 			
 	var cube = new THREE.Mesh( cube, material );
