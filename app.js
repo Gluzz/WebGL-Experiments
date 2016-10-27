@@ -17,7 +17,7 @@ var scene = new THREE.Scene();
 	wireframe: true,
 } );
 
-var gridHelper = new THREE.GridHelper( 100, 25, 0x00a2b1, 0x00a2b1 );
+var gridHelper = new THREE.GridHelper( 500, 25, 0x00a2b1, 0x00a2b1 );
 scene.add( cube );
 			
 	var cube = new THREE.Mesh( cube, material );
