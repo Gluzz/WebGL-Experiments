@@ -24,19 +24,19 @@ var material1 = new THREE.MeshBasicMaterial( {
 
 			
 var gridHelper = new THREE.GridHelper( 100, 25 );
-scene.add( gridHelper );
+scene.add( cube );
 			
 	var cube = new THREE.Mesh( cube, material );
 	var GridHelper = new THREE.Mesh( gridHelper, material1 );
-scene.add( cube );
+scene.add( gridHelper );
 			
 var loader = new THREE.JSONLoader();
 
 var render = function () {
 	requestAnimationFrame( render );
 
-	cube.rotation.x += 0.01;
-	cube.rotation.y += 0.0;
+	cube.rotation.x += 0.0;
+	cube.rotation.y += 0.01;
 	gridHelper.rotation.x += 0.0;
 	gridHelper.rotation.y += 0.0;
 
