@@ -5,6 +5,7 @@ var scene = new THREE.Scene();
 
 	camera.position.y = 5;
 	camera.position.z = 5;
+	camera.position.x = 5;
 
 	var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
