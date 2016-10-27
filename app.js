@@ -14,12 +14,12 @@ var scene = new THREE.Scene();
 	var cube = new THREE.BoxGeometry( 10, 10, 10 );
 	var material = new THREE.MeshBasicMaterial( { 
 	color: 0xdc0070,
-	wireframe: true,
+	wireframe: false,
 } );
 
 var material1 = new THREE.MeshBasicMaterial( { 
 	color: 0x00a2b1,
-	wireframe: true,
+	wireframe: false,
 } );
 
 			
