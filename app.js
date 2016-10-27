@@ -7,22 +7,25 @@ var scene = new THREE.Scene();
 	camera.position.z = 50;
 	camera.position.x = 0;
 
-	var renderer = new THREE.WebGLRenderer();
+var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
 
-	var cube = new THREE.BoxGeometry( 10, 10, 10 );
-	var material = new THREE.MeshBasicMaterial( { 
-	color: 0xdc0070,
-	wireframe: true,
+var cube = new THREE.BoxGeometry( 10, 10, 10 );
+var material = new THREE.MeshBasicMaterial
+( { 
+color: 0xdc0070,
+wireframe: true,
 } );
 
 var gridHelper = new THREE.GridHelper( 500, 25, 0x00a2b1, 0x00a2b1 );
-scene.add( cube );
+
 			
-	var cube = new THREE.Mesh( cube, material );
-	var GridHelper = new THREE.Mesh( gridHelper, material );
+var cube = new THREE.Mesh( cube, material );
+var GridHelper = new THREE.Mesh( gridHelper, material );
+
 scene.add( gridHelper );
+scene.add( cube );
 			
 var loader = new THREE.JSONLoader();
 
