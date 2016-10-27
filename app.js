@@ -3,9 +3,11 @@ console.log('console test'); //console print test
 var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-	camera.position.y = 5;
+	camera.position.y = 15;
 	camera.position.z = 50;
 	camera.position.x = 0;
+	camera.rotation.x = -0.2
+
 
 var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
