@@ -20,7 +20,7 @@ color: 0xdc0070,
 wireframe: true,
 } );
 
-var gridHelper = new THREE.GridHelper( 1000, 150, 0x00a2b1, 0x00a2b1 );
+var gridHelper = new THREE.GridHelper( 500, 75, 0x00a2b1, 0x00a2b1 );
 
 			
 var cube = new THREE.Mesh( cube, material );
