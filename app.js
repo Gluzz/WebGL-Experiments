@@ -36,9 +36,9 @@ var render = function () {
 
 	cube.rotation.x += 0.01;
 	cube.rotation.y += 0.01;
-	cube.postiion.x = 0;
-	cube.postiion.z = 0;
-	cube.postiion.y = 10;
+	///cube.postiion.x = 0;
+	///cube.postiion.z = 0;
+	///cube.postiion.y = 10;
 	gridHelper.rotation.x += 0.0;
 	gridHelper.rotation.y += 0.0;
 
