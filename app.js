@@ -33,6 +33,10 @@ scene.add( cube );
 			
 var loader = new THREE.JSONLoader();
 
+var gui = new DAT.GUI({
+    height : 5 * 32 - 1
+});
+
 var render = function () {
 	requestAnimationFrame( render );
 
