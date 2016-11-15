@@ -7,9 +7,6 @@ var scene = new THREE.Scene();
 	camera.position.z = 50;
 	camera.position.x = 0;
 	camera.rotation.x = -0.2;
-	cube.position.x = 0;
-	cube.position.y = 12;
-	cube.position.z = 0;
 
 var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
