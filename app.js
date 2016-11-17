@@ -6,7 +6,8 @@ var scene = new THREE.Scene();
 	camera.position.y = 15;
 	camera.position.z = 50;
 	camera.position.x = 0;
-	camera.rotation.x = -0.2;
+	camera.rotation.x = -0.2
+
 
 var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
@@ -17,9 +18,9 @@ var material = new THREE.MeshBasicMaterial
 ( { 
 color: 0xdc0070,
 wireframe: true,
-} );
+} );	
 
-var gridHelper = new THREE.GridHelper( 500, 75, 0x00a2b1, 0x00a2b1 );
+var gridHelper = new THREE.GridHelper( 5000, 750, 0x00a2b1, 0x00a2b1 );
 
 			
 var cube = new THREE.Mesh( cube, material );
@@ -30,18 +31,14 @@ scene.add( cube );
 			
 var loader = new THREE.JSONLoader();
 
-var gui = new DAT.GUI({
-    height : 5 * 32 - 1
-});
-
 var render = function () {
 	requestAnimationFrame( render );
 
 	cube.rotation.x += 0.01;
 	cube.rotation.y += 0.01;
-	
 	gridHelper.rotation.x += 0.0;
 	gridHelper.rotation.y += 0.0;
+	gridHelper.position.z += 1.0;
 
 	renderer.render(scene, camera);
 };
