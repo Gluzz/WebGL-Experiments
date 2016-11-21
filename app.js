@@ -1,14 +1,15 @@
 console.log('console test'); //console print test
 
 var scene = new THREE.Scene();
-	var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+	var camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 	camera.position.y = 15;
 	camera.position.z = 50;
 	camera.position.x = 0;
 	camera.rotation.x = -0.2
 
-
+	scene.fog = new THREE.Fog( 0xc288fc, 1, 1000 );
+	
 var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
